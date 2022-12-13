@@ -1,75 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=specimen:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-
-@import url("https://fonts.google.com/specimen/Outfit");
-html {
-    font-size: 18px;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-/*typrography*/
-
-
 body {
-    margin: 0;
-    padding: 0.7em, 0.5em;
     background-color:  hsl(217, 54%, 11%);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    font-family: 'specimen';
+    height: 100vh;
+    font-size: 18px;
+    font-family:  Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-main {
-    max-width : 450px;
-    background-color: hsl(216, 50%, 16%);
-    padding: 1.5em;
-    border-radius: 1.2em;
-    margin: 2em;
-}
-.preview-frame {
-    border-radius: 2em;
-}
-#preview-img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.6em;
+/*typography*/
+
+body {
+
 }
 h1 {
     color: hsl(0, 0%, 100%);
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 h2 {
-    font-size: .9rem;
-    color: hsl(178, 100%, 50%)
-}
-p, h3 {
-    font-size: .8rem;
-    color: hsl(215, 51%, 70%);
+    font-size: .7rem;
+    color: hsl(178, 100%, 50%);
 }
 
-.contents-row, .p-row{
+p, h3 {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.8em;
+}
+span {
+    color: hsl(0, 0%, 100%);
+}
+p-name, p, h3 {
+    font-size: .8rem;
+    margin: 0;
+}
+
+
+/* Layout */
+
+main {
+    max-width : 270px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.2em;
+    border-radius: .6em;
+    margin: 2em;
+}
+
+.preview-frame #preview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4em;
+}
+
+
+.contents-row {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2em 0;
+}
+
+.cont-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0.5em 0;
+}
+.cont-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    gap: 5px;
+}
+#eth-logo {
+    width: 8px;
+    height: 15px;
+}
+#timer {
+    width: 15px;
+    height: 15px;
+}
+.p-row{
+    display: flex;
     justify-content: left;
     align-items: center;
-    gap: 15px;
-}
-#eth-logo,
-#timer {
-    width: 20px;
-    height: 20px;
+    gap: 10px;
 }
 #p-image {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-style: solid;
     border-color: aliceblue;
     border-radius: 100%;
+    border-width: 1px;
 }
 .divider {
     width : 100%;
