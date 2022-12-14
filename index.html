@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:opsz,wght@9..144,700">
-  <title>Frontend Mentor | NFT preview card component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(0, 0%, 100%); }
+    .attribution { visibility: hidden; }
   </style>
 </head>
 <body>
         <main class="container">
             <div class="preview-frame">
                 <img id="preview-img" src="images/image-equilibrium.jpg" alt="cubic ice" />
-                <!-- <img id="preview-img-active" src="images/icon-view.svg" alt="cubic ice" /> -->
+                <div class="eye-view">
+                    <img id="preview-img-active" src="images/icon-view.svg" alt="cubic ice" />
+                </div>
             </div>
             <h1>Equilibrium #3429</h1>
             <p>Our Equilibrium collection promotes balance and calm.</p>
@@ -31,10 +32,14 @@
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="p-row">
+            <div class="author">
                 <img id="p-image" src="images/image-avatar.png" alt="male avatar" />
                 <p class="p-name">Creation of <span>Jules Wyvern</span> </p>
             </div>
         </main>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Gbenga Bayode</a>.
+          </div>
 </body>
 </html>
